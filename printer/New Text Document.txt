@@ -1,7 +1,0 @@
-http://www.microsoft.com/downloads/en/details.aspx?FamilyID=220549b5-0b07-4448-8848-dcc397514b41
-
-http://msdn.microsoft.com/en-us/library/49b92ztk(VS.80).aspx
-
-http://www.dotnetspider.com/resources/40239-How-Create-Backup-Restore-DataBase.aspx  // Create Backup and Restore the DataBase in Window Application
-
-deploy database window application with database

@@ -51,8 +51,9 @@
             this.panel1.Controls.Add(this.btnReport);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(953, 616);
+            this.panel1.Size = new System.Drawing.Size(1430, 948);
             this.panel1.TabIndex = 0;
             // 
             // lblPaper
@@ -61,9 +62,10 @@
             this.lblPaper.AutoSize = true;
             this.lblPaper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaper.ForeColor = System.Drawing.Color.Black;
-            this.lblPaper.Location = new System.Drawing.Point(410, 34);
+            this.lblPaper.Location = new System.Drawing.Point(615, 52);
+            this.lblPaper.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPaper.Name = "lblPaper";
-            this.lblPaper.Size = new System.Drawing.Size(46, 17);
+            this.lblPaper.Size = new System.Drawing.Size(64, 25);
             this.lblPaper.TabIndex = 63;
             this.lblPaper.Text = "Paper";
             // 
@@ -73,18 +75,20 @@
             this.lblCompany.AutoSize = true;
             this.lblCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompany.ForeColor = System.Drawing.Color.Black;
-            this.lblCompany.Location = new System.Drawing.Point(408, 9);
+            this.lblCompany.Location = new System.Drawing.Point(612, 14);
+            this.lblCompany.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCompany.Name = "lblCompany";
-            this.lblCompany.Size = new System.Drawing.Size(97, 25);
+            this.lblCompany.Size = new System.Drawing.Size(141, 36);
             this.lblCompany.TabIndex = 59;
             this.lblCompany.Text = "Company";
             // 
             // Previous
             // 
             this.Previous.AccessibleName = "SetStyle2";
-            this.Previous.Location = new System.Drawing.Point(691, 465);
+            this.Previous.Location = new System.Drawing.Point(1142, 506);
+            this.Previous.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Previous.Name = "Previous";
-            this.Previous.Size = new System.Drawing.Size(75, 23);
+            this.Previous.Size = new System.Drawing.Size(112, 35);
             this.Previous.TabIndex = 62;
             this.Previous.Text = "Previous";
             this.Previous.UseVisualStyleBackColor = true;
@@ -95,9 +99,10 @@
             this.btnReceving.BackColor = System.Drawing.Color.SlateGray;
             this.btnReceving.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReceving.ForeColor = System.Drawing.Color.White;
-            this.btnReceving.Location = new System.Drawing.Point(677, 86);
+            this.btnReceving.Location = new System.Drawing.Point(1016, 132);
+            this.btnReceving.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReceving.Name = "btnReceving";
-            this.btnReceving.Size = new System.Drawing.Size(159, 161);
+            this.btnReceving.Size = new System.Drawing.Size(238, 248);
             this.btnReceving.TabIndex = 61;
             this.btnReceving.Text = "Receving";
             this.btnReceving.UseVisualStyleBackColor = false;
@@ -108,9 +113,10 @@
             this.btnIssue.BackColor = System.Drawing.Color.SlateGray;
             this.btnIssue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIssue.ForeColor = System.Drawing.Color.White;
-            this.btnIssue.Location = new System.Drawing.Point(368, 340);
+            this.btnIssue.Location = new System.Drawing.Point(575, 132);
+            this.btnIssue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnIssue.Name = "btnIssue";
-            this.btnIssue.Size = new System.Drawing.Size(159, 161);
+            this.btnIssue.Size = new System.Drawing.Size(238, 248);
             this.btnIssue.TabIndex = 60;
             this.btnIssue.Text = "Issue";
             this.btnIssue.UseVisualStyleBackColor = false;
@@ -121,9 +127,10 @@
             this.btnReport.BackColor = System.Drawing.Color.SlateGray;
             this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.Location = new System.Drawing.Point(71, 69);
+            this.btnReport.Location = new System.Drawing.Point(162, 132);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(159, 161);
+            this.btnReport.Size = new System.Drawing.Size(238, 248);
             this.btnReport.TabIndex = 59;
             this.btnReport.Text = "Report";
             this.btnReport.UseVisualStyleBackColor = false;
@@ -131,14 +138,16 @@
             // 
             // SelectOption
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 616);
+            this.ClientSize = new System.Drawing.Size(1430, 948);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SelectOption";
             this.Text = "SelectOption";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.SelectOption_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

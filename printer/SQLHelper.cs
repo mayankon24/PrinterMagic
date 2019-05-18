@@ -18,10 +18,6 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.IO;
 
-
-using Microsoft.SqlServer.Management.Smo;
-using Microsoft.SqlServer.Management.Common;
-
 namespace printer
 {
     public class SQLHelper
@@ -744,31 +740,31 @@ namespace printer
         }
         #endregion
 
-        public void BackupDatabase(String destinationPath)
-        {
-            SqlConnection SqlConn = Connection();
-            string databaseName = SqlConn.Database;
-            ServerConnection connection = new ServerConnection(SqlConn);
-            Server sqlServer = new Server(connection);
-            BackupDeviceItem deviceItem = new BackupDeviceItem(destinationPath, DeviceType.File);
+        //public void BackupDatabase(String destinationPath)
+        //{
+        //    SqlConnection SqlConn = Connection();
+        //    string databaseName = SqlConn.Database;
+        //    ServerConnection connection = new ServerConnection(SqlConn);
+        //    Server sqlServer = new Server(connection);
+        //    BackupDeviceItem deviceItem = new BackupDeviceItem(destinationPath, DeviceType.File);
 
 
-            Backup sqlBackup = new Backup();
-            sqlBackup.Devices.Add(deviceItem);
-            sqlBackup.Action = BackupActionType.Database;
-            sqlBackup.BackupSetDescription = "ArchiveDataBase:" + DateTime.Now.ToShortDateString();
-            sqlBackup.BackupSetName = "Archive";
-            sqlBackup.Initialize = true;
-            sqlBackup.Checksum = true;
-            sqlBackup.ContinueAfterError = true;
-            sqlBackup.Incremental = false;
-            sqlBackup.ExpirationDate = DateTime.Now.AddDays(3);
-            sqlBackup.LogTruncation = BackupTruncateLogType.Truncate;
-            sqlBackup.FormatMedia = false;
+        //    Backup sqlBackup = new Backup();
+        //    sqlBackup.Devices.Add(deviceItem);
+        //    sqlBackup.Action = BackupActionType.Database;
+        //    sqlBackup.BackupSetDescription = "ArchiveDataBase:" + DateTime.Now.ToShortDateString();
+        //    sqlBackup.BackupSetName = "Archive";
+        //    sqlBackup.Initialize = true;
+        //    sqlBackup.Checksum = true;
+        //    sqlBackup.ContinueAfterError = true;
+        //    sqlBackup.Incremental = false;
+        //    sqlBackup.ExpirationDate = DateTime.Now.AddDays(3);
+        //    sqlBackup.LogTruncation = BackupTruncateLogType.Truncate;
+        //    sqlBackup.FormatMedia = false;
 
-            sqlBackup.Database = databaseName;
-            sqlBackup.SqlBackup(sqlServer);
-        }
+        //    sqlBackup.Database = databaseName;
+        //    sqlBackup.SqlBackup(sqlServer);
+        //}
 
     
     }
