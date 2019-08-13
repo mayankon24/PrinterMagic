@@ -40,12 +40,12 @@ namespace printer
         {
             try
             {
-                Excel.Application xlApp;
-                Excel.Workbook xlWorkBook;
-                Excel.Worksheet xlWorkSheet;
+                Excel._Application xlApp;
+                Excel._Workbook xlWorkBook;
+                Excel._Worksheet xlWorkSheet;
                 object misValue = System.Reflection.Missing.Value;
 
-                xlApp = new Excel.ApplicationClass();
+                xlApp = new Excel.Application();
                 xlWorkBook = xlApp.Workbooks.Add(misValue);
                 xlWorkSheet = (Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
                 int i = 0;
